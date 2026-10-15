@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Sara's B1 English Challenge · 30 minutes</title>
+<style>
+:root{color-scheme:light;--ink:#172837;--muted:#617583;--teal:#08786f;--bg:#f3f7f7;--line:#dce6e7;--gold:#eebd75}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+header{color:white;background:linear-gradient(110deg,#10283b,#115f69);padding:35px max(22px,calc((100vw - 930px)/2)) 55px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.12;letter-spacing:-.04em;margin:10px 0}
+header p{color:#d8eeee;margin:4px 0}header .pill{display:inline-block;border:1px solid #5c939a;border-radius:30px;padding:5px 12px;margin:16px 8px 0 0;font-size:13px}
+main{max-width:970px;margin:-27px auto 50px;padding:0 16px}section.panel,.panel{background:white;border:1px solid var(--line);border-radius:15px;box-shadow:0 12px 35px #1338430c;padding:26px}
+h2{font-size:25px;margin:4px 0 9px;letter-spacing:-.02em}h3{margin:12px 0 8px}
+small,.muted{color:var(--muted)}.muted{font-size:14px}.eyebrow{text-transform:uppercase;color:var(--teal);font-size:12px;font-weight:800;letter-spacing:.12em}
+button{cursor:pointer;border-radius:9px;border:1px solid #afc8c9;background:white;color:var(--ink);padding:11px 16px;font:600 14px inherit;font-weight:700}
+button.primary{color:white;background:var(--teal);border-color:var(--teal)}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #e2aa4c;outline-offset:2px}button:disabled{opacity:.45;cursor:not-allowed}
+label{display:block}.field{font-weight:700;margin:18px 0 5px;font-size:14px}input[type=text]{padding:12px 13px;border:1px solid #b7c8ce;border-radius:8px;width:100%;max-width:380px;font-size:16px}
+.hidden{display:none!important}#examBar{position:sticky;top:0;z-index:5;background:#f7fbfb;border:1px solid var(--line);border-radius:11px;display:flex;align-items:center;gap:14px;justify-content:space-between;padding:10px 18px;margin-bottom:14px;box-shadow:0 4px 12px #142b3315}
+#clock{font-size:24px;font-weight:900;letter-spacing:-.03em;font-variant-numeric:tabular-nums}#clock.warning{color:#c03c2b}
+.progress{flex:1;max-width:260px;height:8px;background:#dce8e8;border-radius:8px;overflow:hidden}.fill{height:100%;width:0;background:var(--teal);transition:width .15s}
+#tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}#tabs button{font-size:13px;padding:9px 11px}#tabs button.current{background:#e2f4f0;color:#075c55;border-color:#8bcfc2}
+.q{border-top:1px solid var(--line);padding:16px 0}.q:first-of-type{border-top:0}.qnum{color:#14756e;font-weight:800;font-size:12px}
+.options{display:grid;gap:8px;margin-top:10px}.option{padding:10px 12px;border:1px solid #d9e5e6;border-radius:9px;display:flex;gap:10px;align-items:start;cursor:pointer;font-size:14px}
+.option:has(input:checked){background:#e9f8f3;border-color:#3ca699}.option input{accent-color:var(--teal);margin-top:4px}
+.reading{background:#f8fafb;border:1px solid var(--line);border-radius:10px;padding:17px 19px;margin:19px 0;line-height:1.8;font-size:15px;white-space:pre-line}
+.notice{background:#f8fafb;border-left:3px solid var(--teal);padding:11px 14px;margin:9px 0;font-size:14px;white-space:pre-line}
+.controls{border-top:1px solid var(--line);margin-top:19px;padding-top:19px;display:flex;justify-content:space-between;gap:9px}
+textarea{width:100%;min-height:170px;border:1px solid #b7c8ce;border-radius:9px;padding:15px;font:15px/1.6 inherit;resize:vertical}
+#results .review{padding:15px 0;border-top:1px solid var(--line)}.good{color:#08705b;font-weight:800}.bad{color:#b54030;font-weight:800}
+.score{font-size:45px;font-weight:900;margin:12px 0;letter-spacing:-.05em}.score span{font-size:17px;color:var(--muted);font-weight:600}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin:17px 0}.note{font-size:13px;color:var(--muted)}footer{text-align:center;font-size:12px;color:#71828a;margin:20px 0}
+@media(max-width:600px){header{padding:27px 20px 52px}main{padding:0 9px}.panel,section.panel{padding:18px}#examBar{flex-wrap:wrap}#tabs button{flex:1 0 42%}}
+</style>
+</head>
+<body>
+<header><div style="text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:#bfe8e3;font-weight:800">English · B1 Level</div>
+<h1>Sara's English Challenge</h1><p>30-minute interactive B1 practice test</p>
+<span class="pill">30 minutes</span><span class="pill">25 marked questions</span><span class="pill">5 sections + writing</span></header>
+<main>
+<section id="welcome" class="panel">
+<div class="eyebrow">Welcome</div><h2>Ready, Sara?</h2>
+<p>This test covers reading, grammar, vocabulary, listening and a short email. You have <b>30 minutes</b>. Your score appears when you finish; your teacher will check your writing.</p>
+<p class="muted">Your answers are stored only in this browser until you choose to copy, download or share them. The timer starts when you press Start.</p>
+<label class="field" for="student">Your name</label><input type="text" id="student" value="Sara Creel" maxlength="60">
+<div style="margin-top:23px"><button class="primary" id="start">Start my 30-minute test →</button></div></section>
+<div id="exam" class="hidden"><div id="examBar"><div><b id="nameBadge">Sara</b><br><small id="completed">0 of 25 answered</small></div><div class="progress"><div class="fill" id="fill"></div></div><div><small>Time left</small><br><span id="clock">30:00</span></div></div>
+<nav id="tabs" aria-label="Test parts"></nav><section class="panel"><div class="eyebrow" id="partLabel"></div><h2 id="partName"></h2><p id="partDesc" class="muted"></p><div id="questions"></div>
+<div class="controls"><button id="prev">← Previous</button><button class="primary" id="next">Next →</button></div></section></div>
+<section id="results" class="panel hidden"></section>
+<footer>Original B1 practice material · Not an official Cambridge exam · No login required</footer>
+</main>
+<script>
+'use strict';
+var parts=[
+{id:'notices',name:'Short reading',time:4,desc:'Read the messages and choose the best answer.'},
+{id:'article',name:'Reading story',time:7,desc:'Read the text carefully, then answer five questions.'},
+{id:'grammar',name:'Grammar & vocabulary',time:9,desc:'Choose the best word or phrase to complete each sentence.'},
+{id:'listen',name:'Listening',time:5,desc:'Press Play to hear each message. You can listen again.'},
+{id:'write',name:'Writing',time:5,desc:'Write a short friendly email (about 50–70 words).'}];
+var reading="Last spring, Emma decided to join a weekend photography class. She had always enjoyed taking pictures with her phone, but she wanted to learn how to use a proper camera. At first, she felt nervous because most of the other students had more experience.\n\nOn the first Saturday, their teacher, Mr Lewis, asked everyone to photograph something ordinary in an interesting way. Emma chose an old bicycle outside a café. Instead of taking a picture of the whole bicycle, she focused on its bright red wheel. Mr Lewis praised her unusual idea.\n\nThe following week, the group visited a local market. It started raining heavily, so Emma was worried her pictures would be ruined. However, she noticed beautiful reflections on the wet streets and took her favourite photo of the course.\n\nBy the end of the month, Emma had made two new friends. She also discovered that a good photograph is not always about expensive equipment. Now she hopes to enter a local photography competition next year.";
+var clips=[
+{title:'Message 1 · Plans for Saturday',speech:"Hi Sara, it's Olivia. About Saturday: the museum opens at ten, but let's meet at the station at half past nine. We can take the bus together. Don't forget to bring your student card, because tickets are cheaper with it.",qids:['L1','L2']},
+{title:'Message 2 · Work experience',speech:"Hello, this is Mr Harris from the bookshop. Thanks for applying for work experience. Please come on Wednesday at two in the afternoon, not Thursday. Wear comfortable shoes because you'll spend some time organising shelves.",qids:['L3','L4']}
+];
+var questions=[
+{id:'R1',p:'notices',q:'A notice says: "The swimming pool is closed on Mondays for cleaning." What does this mean?',a:['You can swim on Monday morning.','You cannot swim on Mondays.','The pool is closed every day.'],correct:1,why:'Closed on Mondays means it is not open that day.'},
+{id:'R2',p:'notices',q:'A text says: "I might be late. Please start dinner without me." What should you do?',a:['Wait until your friend arrives.','Cancel dinner.','Begin eating before your friend arrives.'],correct:2,why:'Without me means do not wait for the sender.'},
+{id:'R3',p:'notices',q:'A shop sign says: "Buy one notebook, get the second half price." What is the offer?',a:['The second notebook costs 50% less.','Every notebook is free.','You must buy three notebooks.'],correct:0,why:'Half price means 50% of the usual price.'},
+{id:'R4',p:'notices',q:'An email says: "Please reply by Friday at the latest." When is the deadline?',a:['After Friday.','Friday or earlier.','Only on Saturday.'],correct:1,why:'By Friday means no later than Friday.'},
+{id:'A1',p:'article',q:'Why did Emma join the course?',a:['She wanted to teach photography.','She wanted to improve her camera skills.','She needed a new phone.'],correct:1,why:'She wanted to learn how to use a proper camera.'},
+{id:'A2',p:'article',q:'Why did Emma feel nervous at first?',a:['Other students seemed more experienced.','She had lost her camera.','Mr Lewis was unfriendly.'],correct:0,why:'Most classmates had more experience.'},
+{id:'A3',p:'article',q:'What was unusual about Emma’s first photograph?',a:['It showed the entire bicycle.','It focused on one colourful detail.','It was taken at night.'],correct:1,why:'She photographed the red wheel rather than the whole bicycle.'},
+{id:'A4',p:'article',q:'What happened at the market?',a:['The rain helped Emma find an interesting picture.','Emma forgot to take photographs.','The market was closed.'],correct:0,why:'Emma saw reflections in the wet streets and took her favourite photograph.'},
+{id:'A5',p:'article',q:'What did Emma learn?',a:['Only expensive cameras take good photographs.','Photography is always difficult.','Interesting ideas can matter more than expensive equipment.'],correct:2,why:'Good photographs are not always about expensive equipment.'},
+{id:'G1',p:'grammar',q:'I _____ in Rome for three years.',a:['live','have lived','am live'],correct:1,why:'Present perfect for a situation that started in the past and continues now.'},
+{id:'G2',p:'grammar',q:'When I got home, my parents _____ dinner.',a:['were cooking','cook','have cooked'],correct:0,why:'Past continuous describes an action in progress when another event happened.'},
+{id:'G3',p:'grammar',q:'If it rains tomorrow, we _____ at home.',a:['stayed','will stay','would stay'],correct:1,why:'First conditional: if + present simple, will + base verb.'},
+{id:'G4',p:'grammar',q:'This is the teacher _____ helped me.',a:['which','whose','who'],correct:2,why:'Who is a relative pronoun used for people.'},
+{id:'G5',p:'grammar',q:'You _____ wear a seatbelt in the car. It is the law.',a:['must','might','can'],correct:0,why:'Must describes a strong obligation.'},
+{id:'G6',p:'grammar',q:'The film was _____ than I expected.',a:['good','better','best'],correct:1,why:'Better is the comparative form of good.'},
+{id:'G7',p:'grammar',q:'I am interested in _____ Spanish.',a:['learn','to learn','learning'],correct:2,why:'After interested in, use the -ing form.'},
+{id:'G8',p:'grammar',q:'She has _____ finished her homework.',a:['already','yet','ever'],correct:0,why:'Already is common in affirmative present-perfect sentences.'},
+{id:'G9',p:'grammar',q:'Could you _____ me a favour?',a:['make','do','give'],correct:1,why:'The collocation is do someone a favour.'},
+{id:'G10',p:'grammar',q:'I’m looking forward to _____ you next week.',a:['seeing','see','saw'],correct:0,why:'Look forward to is followed by a noun or verb ending in -ing.'},
+{id:'G11',p:'grammar',q:'My phone _____ last night, so I couldn’t call you.',a:['stole','was stolen','has stolen'],correct:1,why:'Past simple passive: was + past participle.'},
+{id:'G12',p:'grammar',q:'We had to _____ the meeting because the manager was ill.',a:['put off','look after','turn on'],correct:0,why:'Put off means postpone.'},
+{id:'L1',p:'listen',q:'Where will Olivia and Sara meet?',a:['At the museum','At the station','At the café'],correct:1,why:'Olivia says to meet at the station.'},
+{id:'L2',p:'listen',q:'What should Sara bring?',a:['A student card','A camera','A packed lunch'],correct:0,why:'The student card makes museum tickets cheaper.'},
+{id:'L3',p:'listen',q:'When should the applicant go to the bookshop?',a:['Thursday at two','Wednesday at ten','Wednesday at two'],correct:2,why:'The message says Wednesday at two in the afternoon.'},
+{id:'L4',p:'listen',q:'Why are comfortable shoes useful?',a:['There will be a long walk outside.','The applicant will organise shelves.','The shop is closing early.'],correct:1,why:'Organising shelves involves spending time standing and moving.'}
+];
+var KEY='b1-sara-online-30-v1',LIMIT=30*60*1000;
+var state={name:'Sara Creel',started:0,ended:0,part:0,answers:{},writing:''};
+try{var restored=JSON.parse(localStorage.getItem(KEY)||'null');if(restored&&restored.started)state=restored;}catch(e){}
+function $(id){return document.getElementById(id);}
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+function count(){return questions.filter(function(q){return Number.isInteger(state.answers[q.id]);}).length;}
+function words(){return (state.writing.trim().match(/\b[\w'-]+\b/g)||[]).length;}
+function refresh(){ $('completed').textContent=count()+' of 25 answered';$('fill').style.width=(count()/25*100)+'%'; }
+function timer(){if(!state.started||state.ended)return;var remaining=Math.max(0,LIMIT-(Date.now()-state.started));var s=Math.ceil(remaining/1000);$('clock').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');$('clock').classList.toggle('warning',s<=180);if(!s)finish(true);}
+function show(){
+$('welcome').classList.toggle('hidden',!!state.started);$('exam').classList.toggle('hidden',!state.started||!!state.ended);$('results').classList.toggle('hidden',!state.ended);
+if(state.ended){renderResults();return;}if(state.started){$('nameBadge').textContent=state.name;render();refresh();timer();}
+}
+function render(){
+$('tabs').innerHTML=parts.map(function(p,i){return '<button type="button" data-part="'+i+'" class="'+(state.part===i?'current':'')+'">'+(i+1)+'. '+esc(p.name)+'</button>';}).join('');
+Array.from($('tabs').children).forEach(function(b){b.onclick=function(){state.part=+b.dataset.part;save();render();window.scrollTo({top:0,behavior:'smooth'});};});
+var p=parts[state.part];$('partLabel').textContent='Part '+(state.part+1)+' of 5 · Suggested '+p.time+' minutes';$('partName').textContent=p.name;$('partDesc').textContent=p.desc;
+var s='';
+if(p.id==='article')s+='<div class="reading"><b>Emma’s photography adventure</b>\n\n'+esc(reading)+'</div>';
+if(p.id==='listen')clips.forEach(function(c,i){s+='<div class="reading"><b>'+esc(c.title)+'</b><p>Listen carefully, then answer the two questions below.</p><button type="button" class="play" data-clip="'+i+'">▶ Play listening message</button><div class="note">Your device reads this aloud. Use a browser with audio enabled.</div></div>';});
+if(p.id==='write'){s+='<div class="reading"><b>Write an email to your English-speaking friend Jamie.</b>\n\nJamie has invited you to spend Saturday together. Write 50–70 words. In your email:\n• Thank Jamie for the invitation.\n• Suggest an activity and explain why.\n• Say when and where you could meet.\n\nBegin: Hi Jamie,</div><textarea id="writing" placeholder="Hi Jamie,\n\nThanks for inviting me...">'+esc(state.writing)+'</textarea><p class="muted" id="wordCount">'+words()+' words · Aim for 50–70</p>';}
+questions.filter(function(q){return q.p===p.id;}).forEach(function(q){s+='<div class="q"><div class="qnum">'+esc(q.id)+'</div><b>'+esc(q.q)+'</b><div class="options">'+q.a.map(function(a,i){return '<label class="option"><input type="radio" name="'+esc(q.id)+'" data-q="'+esc(q.id)+'" value="'+i+'" '+(state.answers[q.id]===i?'checked':'')+'><span><b>'+('ABC'[i])+'.</b> '+esc(a)+'</span></label>';}).join('')+'</div></div>';});
+$('questions').innerHTML=s;
+Array.from(document.querySelectorAll('input[data-q]')).forEach(function(input){input.onchange=function(){state.answers[input.dataset.q]=Number(input.value);save();refresh();};});
+if($('writing'))$('writing').oninput=function(){state.writing=this.value;save();$('wordCount').textContent=words()+' words · Aim for 50–70';};
+Array.from(document.querySelectorAll('button[data-clip]')).forEach(function(b){b.onclick=function(){var clip=clips[+b.dataset.clip];if(!('speechSynthesis' in window)){alert('Audio is not supported in this browser. Ask your teacher to read the script.');return;}speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(clip.speech);u.lang='en-GB';u.rate=.86;var voices=speechSynthesis.getVoices();var british=voices.find(function(v){return /^en-GB/i.test(v.lang);});if(british)u.voice=british;speechSynthesis.speak(u);};});
+$('prev').disabled=state.part===0;$('prev').onclick=function(){state.part=Math.max(0,state.part-1);save();render();window.scrollTo({top:0,behavior:'smooth'});};
+$('next').textContent=state.part===4?'Finish & see results':'Next part →';$('next').onclick=function(){if(state.part<4){state.part++;save();render();window.scrollTo({top:0,behavior:'smooth'});}else finish(false);};
+}
+function finish(auto){if(state.ended)return;if(!auto){var missing=25-count();if(!confirm(missing?'You still have '+missing+' unanswered questions. Finish now?':'Finish the test now?'))return;}state.ended=Date.now();save();if('speechSynthesis' in window)speechSynthesis.cancel();show();window.scrollTo({top:0,behavior:'smooth'});}
+function report(){
+var score=questions.filter(function(q){return state.answers[q.id]===q.correct;}).length;
+var lines=['SARA · B1 ENGLISH · 30-MINUTE TEST','Name: '+state.name,'Completed: '+new Date(state.ended).toLocaleString(),'Automatic score: '+score+'/25','Writing: teacher to mark separately','','WRITING ('+words()+' words):',state.writing||'(No response)','','ANSWER DETAILS:'];
+questions.forEach(function(q){lines.push(q.id+' '+(Number.isInteger(state.answers[q.id])?'ABC'[state.answers[q.id]]:'—')+' (correct '+('ABC'[q.correct])+') '+(state.answers[q.id]===q.correct?'✓':'✗')+' '+q.q);});
+return lines.join('\n');
+}
+function renderResults(){
+var score=questions.filter(function(q){return state.answers[q.id]===q.correct;}).length;
+var s='<div class="eyebrow">Test complete</div><h2>Well done, '+esc(state.name.split(' ')[0])+'!</h2><div class="score">'+score+' <span>/ 25 automatically marked</span></div><p>Your teacher will mark your writing separately. This practice score is not an official B1 pass result.</p><div class="actions"><button class="primary" id="emailResults">Email results to teacher</button><button id="copyResults">Copy results</button><button id="downloadResults">Download results</button><button id="reset">Start again</button></div><h3>Your writing ('+words()+' words)</h3><div class="reading">'+esc(state.writing||'No writing submitted.')+'</div><h3>Answers & explanations</h3>';
+questions.forEach(function(q){var correct=state.answers[q.id]===q.correct;s+='<div class="review"><b>'+esc(q.id)+'. '+esc(q.q)+'</b><div class="'+(correct?'good':'bad')+'">Your answer: '+(Number.isInteger(state.answers[q.id])?esc(q.a[state.answers[q.id]]):'No answer')+' '+(correct?'✓':'✗')+'</div><div>Correct: <b>'+esc(q.a[q.correct])+'</b></div><small>'+esc(q.why)+'</small></div>';});
+$('results').innerHTML=s;
+$('copyResults').onclick=function(){if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(report()).then(function(){$('copyResults').textContent='Copied ✓';}).catch(function(){prompt('Copy your results',report());});else prompt('Copy your results',report());};
+$('downloadResults').onclick=function(){var blob=new Blob([report()],{type:'text/plain;charset=utf-8'});var a=document.createElement('a');var uri=URL.createObjectURL(blob);a.href=uri;a.download='Sara_B1_Test_Results.txt';a.click();setTimeout(function(){URL.revokeObjectURL(uri);},1200);};
+$('emailResults').onclick=function(){location.href='mailto:info@digital-notion.com?subject='+encodeURIComponent('Sara B1 30-minute English test results')+'&body='+encodeURIComponent(report());};
+$('reset').onclick=function(){if(confirm('Delete this attempt and restart?')){localStorage.removeItem(KEY);location.reload();}};
+}
+$('start').onclick=function(){state.name=$('student').value.trim()||'Sara';state.started=Date.now();save();show();};
+show();setInterval(timer,500);
+</script>
+</body></html>
